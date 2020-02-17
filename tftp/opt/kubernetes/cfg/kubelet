@@ -1,0 +1,12 @@
+KUBELET_OPTS="--logtostderr=true \
+--v=4 \
+--address=172.31.24.230 \
+--hostname-override=172.31.24.230 \
+--kubeconfig=/opt/kubernetes/cfg/kubelet.kubeconfig \
+--experimental-bootstrap-kubeconfig=/opt/kubernetes/cfg/bootstrap.kubeconfig \
+--cert-dir=/opt/kubernetes/ssl \
+--allow-privileged=true \
+--cluster-dns=10.0.0.2 \
+--cluster-domain=cluster.local \
+--fail-swap-on=false \
+--pod-infra-container-image=registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0"
